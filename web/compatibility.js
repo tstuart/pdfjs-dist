@@ -1411,10 +1411,6 @@ if (typeof PDFJS === 'undefined' || !PDFJS.compatibilityChecked) {
     if (!hasDOM) {
       return;
     }
-    if (isIOS) {
-      installFakeAnimationFrameFunctions();
-      return;
-    }
     if ('requestAnimationFrame' in window) {
       return;
     }
